@@ -1,0 +1,22 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-service
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 是否向注册中心注册自己，这里是注册中心，不需要
+    register-with-eureka: false
+    # 是否向注册中心获取信息，不需要为false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
+
