@@ -11,6 +11,8 @@
     <modules>
         <module>eureka-service</module>
         <module>config-service</module>
+        <module>spring-demo-service</module>
+        <module>spring-demo-service-ribbon</module>
     </modules>
 
     <properties>
