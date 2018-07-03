@@ -7,3 +7,7 @@ server:
 spring:
   application:
     name: spring-ribbon-service
+#新增配置策略
+spring-demo-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
