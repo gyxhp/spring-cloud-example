@@ -8,7 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-service" />
         <module name="eureka-service" />
+        <module name="spring-cloud-hystrix-dashboard" />
         <module name="spring-demo-service" />
+        <module name="spring-demo-service-feign" />
         <module name="spring-demo-service-ribbon" />
       </profile>
     </annotationProcessing>
@@ -16,7 +18,9 @@
       <module name="config-service" target="1.8" />
       <module name="eureka-service" target="1.8" />
       <module name="spring-cloud" target="1.5" />
+      <module name="spring-cloud-hystrix-dashboard" target="1.8" />
       <module name="spring-demo-service" target="1.8" />
+      <module name="spring-demo-service-feign" target="1.8" />
       <module name="spring-demo-service-ribbon" target="1.8" />
     </bytecodeTargetLevel>
   </component>
