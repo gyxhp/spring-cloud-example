@@ -15,6 +15,7 @@
         <module>spring-demo-service-ribbon</module>
         <module>spring-demo-service-feign</module>
         <module>spring-cloud-hystrix-dashboard</module>
+        <module>spring-cloud-hystrix-dashboard-turbine</module>
     </modules>
 
     <properties>

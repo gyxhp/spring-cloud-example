@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: spring-cloud-hystrix-dashboard-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8561
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS
+
+turbine:
+  #  配置 eureka 中的service-id 列表，指定服务名
+  app-config: SPRING-DEMO-SERVICE-FEIGN,SPRING-DEMO-SERVICE-RIBBON
+  aggregator:
+    cluster-config: default
+  # 制定集群名称
+  cluster-name-expression: "'default'"
+
