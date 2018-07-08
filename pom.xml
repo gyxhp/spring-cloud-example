@@ -16,6 +16,7 @@
         <module>spring-demo-service-feign</module>
         <module>spring-cloud-hystrix-dashboard</module>
         <module>spring-cloud-hystrix-dashboard-turbine</module>
+        <module>spring-boot-admin</module>
     </modules>
 
     <properties>

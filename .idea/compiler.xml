@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-service" />
         <module name="eureka-service" />
+        <module name="spring-boot-admin" />
         <module name="spring-cloud-hystrix-dashboard" />
         <module name="spring-cloud-hystrix-dashboard-turbine" />
         <module name="spring-demo-service" />
@@ -18,6 +19,7 @@
     <bytecodeTargetLevel>
       <module name="config-service" target="1.8" />
       <module name="eureka-service" target="1.8" />
+      <module name="spring-boot-admin" target="1.8" />
       <module name="spring-cloud" target="1.5" />
       <module name="spring-cloud-hystrix-dashboard" target="1.8" />
       <module name="spring-cloud-hystrix-dashboard-turbine" target="1.8" />
