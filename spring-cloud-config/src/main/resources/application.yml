@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/shmilyah/cloud-config-samples.git
+          search-paths: '{application}'
+  application:
+    name: spring-cloud-config
