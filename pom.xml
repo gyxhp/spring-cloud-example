@@ -19,6 +19,7 @@
         <module>spring-cloud-config</module>
         <module>spring-cloud-config-client</module>
         <module>spring-cloud-gateway</module>
+        <module>spring-boot-elasticsearch</module>
     </modules>
 
     <properties>

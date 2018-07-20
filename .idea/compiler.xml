@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-service" />
         <module name="spring-boot-admin" />
+        <module name="spring-boot-elasticsearch" />
         <module name="spring-cloud-config" />
         <module name="spring-cloud-config-client" />
         <module name="spring-cloud-gateway" />
@@ -22,6 +23,7 @@
       <module name="config-service" target="1.8" />
       <module name="eureka-service" target="1.8" />
       <module name="spring-boot-admin" target="1.8" />
+      <module name="spring-boot-elasticsearch" target="1.8" />
       <module name="spring-cloud" target="1.5" />
       <module name="spring-cloud-config" target="1.8" />
       <module name="spring-cloud-config-client" target="1.8" />
