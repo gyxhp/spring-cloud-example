@@ -8,5 +8,6 @@ spring:
         git:
           uri: https://github.com/shmilyah/cloud-config-samples.git
           search-paths: '{application}'
+
   application:
     name: spring-cloud-config
