@@ -1,0 +1,48 @@
+logging:
+  level: debug
+
+#elasticjob:
+#  serverlists: 127.0.0.1:2181
+#  namespace: boot-job
+
+regCenter:
+  serverlists: 11.240.176.56:2181,11.240.176.56:2182
+  namespace: boot-job
+
+spring:
+  datasource:
+    url: jdbc:mysql://11.240.184.228:3306/mytest?characterEncoding=utf-8&verifyServerCertificate=false&useSSL=false&requireSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+#    type: com.zaxxer.hikari.HikariDataSource
+#  自动创建更新验证数据库结构
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    database: mysql
+
+#mybatis:
+#  mapper-locations: classpath:org.boot.elasticjob.mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+#  type-aliases-package: org.boot.elasticjob.entity  # 注意：对应实体类的路径
+
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
+
+stockJob:
+  # cron  为定时任务的cron表达式；
+  cron: 0/5 * * * * ?
+  # shardingTotalCount  为任务的分数量（即同时同时开几个定时任务）；
+  shardingTotalCount: 5
+  # shardingItemParameters  为任务分片携带的参数；
+  shardingItemParameters: 0=红,1=绿,2=蓝,3=黑,4=紫
+
+
+stockJob1:
+  # cron  为定时任务的cron表达式；
+  cron: 0/5 * * * * ?
+  # shardingTotalCount  为任务的分数量（即同时同时开几个定时任务）；
+  shardingTotalCount: 3
+  # shardingItemParameters  为任务分片携带的参数；
+  shardingItemParameters: 0=张三,1=李四,2=王五
