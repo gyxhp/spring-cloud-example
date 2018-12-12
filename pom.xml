@@ -20,7 +20,7 @@
         <module>spring-cloud-config-client</module>
         <module>spring-cloud-gateway</module>
         <module>spring-boot-elasticsearch</module>
-        <module>spring-boot-elastic-job</module>
+        <module>spring-boot-elasticjob</module>
     </modules>
 
     <properties>
