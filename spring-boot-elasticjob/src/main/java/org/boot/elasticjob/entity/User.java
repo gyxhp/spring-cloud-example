@@ -1,6 +1,10 @@
 package org.boot.elasticjob.entity;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
+    private static final long serialVersionUID = -3427227240316791483L;
+
     private Integer userId;
 
     private String userName;
