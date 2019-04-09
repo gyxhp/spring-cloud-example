@@ -4,16 +4,20 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-admin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-elastic-job" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-elasticjob" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-config-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-turbine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream/src/main/resources/application.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-demo-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-demo-service-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-demo-service-ribbon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-sleuth-service1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-sleuth-service2" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -1,0 +1,34 @@
+server:
+  port: 9899
+spring:
+  application:
+    name: spring-cloud-stream
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        firstInput:
+           #指定对应输入通道的主题名
+           destination: firststream
+           #指定消费组，防止为分布式微服务系统的多次消费
+           #分布式系统中group参数显得尤为重要
+           group: stream
+           consumer:
+              # 通过该参数开启消息分区功能
+              partitioned: true
+        firstOutput:
+           destination: firststream
+           producer:
+              partitionKeyExpression: payload
+              #可以使用以下两个注解来使用自定义分片策略
+              #partitionKeyExtractorClass:
+              #partitionSelectorClass
+              partitionCount: 2
+      instance-count: 2
+      # instance-count 设置了消费者实例的总数
+      instance-index: 1
+      # instance-index 设置当前消费者的索引号，对应分片号，从0 开始，最大用-1

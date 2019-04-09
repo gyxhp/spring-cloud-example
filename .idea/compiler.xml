@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="boot-elasticjob" />
         <module name="eureka-service" />
         <module name="spring-boot-admin" />
         <module name="spring-boot-elastic-job" />
@@ -15,12 +16,16 @@
         <module name="spring-cloud-gateway" />
         <module name="spring-cloud-hystrix-dashboard" />
         <module name="spring-cloud-hystrix-dashboard-turbine" />
+        <module name="spring-cloud-stream" />
         <module name="spring-demo-service" />
         <module name="spring-demo-service-feign" />
         <module name="spring-demo-service-ribbon" />
+        <module name="spring-sleuth-service1" />
+        <module name="spring-sleuth-service2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="boot-elasticjob" target="1.8" />
       <module name="config-service" target="1.8" />
       <module name="eureka-service" target="1.8" />
       <module name="spring-boot-admin" target="1.8" />
@@ -32,9 +37,13 @@
       <module name="spring-cloud-gateway" target="1.8" />
       <module name="spring-cloud-hystrix-dashboard" target="1.8" />
       <module name="spring-cloud-hystrix-dashboard-turbine" target="1.8" />
+      <module name="spring-cloud-stream" target="1.8" />
       <module name="spring-demo-service" target="1.8" />
       <module name="spring-demo-service-feign" target="1.8" />
       <module name="spring-demo-service-ribbon" target="1.8" />
+      <module name="spring-demo-service1" target="1.8" />
+      <module name="spring-sleuth-service1" target="1.8" />
+      <module name="spring-sleuth-service2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
