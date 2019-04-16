@@ -1,8 +1,12 @@
+server:
+  port: 9999
 spring:
+  application:
+    name: spring-boot-elasticearch
   data:
     elasticsearch:
-      cluster-name: elasticsearch  #默认为 elasticsearch
+      cluster-name: elasticsearch  #默认为 my-application
       cluster-nodes: 127.0.0.1:9300 #配置节点信息，逗号分隔，如果没有配置，则默认启动ClientNode,9200是http端口，9300是java用户端口
-      properties:
-        logs: ./elasticsearch/log #elasticsearch日志存储目录
-        data: ./elasticsearch/data #e lasticsearch数据存储目录
+#      properties:
+#        logs: ./elasticsearch/log #elasticsearch日志存储目录
+#        data: ./elasticsearch/data #e lasticsearch数据存储目录
